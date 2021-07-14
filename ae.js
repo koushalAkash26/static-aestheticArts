@@ -5,7 +5,7 @@ var head = document.getElementsByClassName('title')[0]
 var bigBox = document.getElementsByClassName('container')[0]
 function display(seq){
     bigBox.style.display="none"
-    head.style.display="none"
+    head.style.display="block"
     secondBox.style.display="block"
     try{
         document.getElementById("image").setAttribute("src",`ae-images/${seq}.jpeg`)
