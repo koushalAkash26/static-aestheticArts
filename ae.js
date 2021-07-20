@@ -31,6 +31,7 @@ box.forEach((ele) => {
 close.addEventListener('click',()=>{
     bigBox.style.display="block"
     head.style.display="block"
+    header.style.display="block"
     secondBox.style.display="none"
 
 
