@@ -64,3 +64,29 @@ mainHome.addEventListener('click',()=>{
     header.style.display="block"
 
 })
+const targets = document.querySelectorAll('[data-lazy]');
+
+
+const lazyLoad = target => {
+  const io = new IntersectionObserver((entries, observer) => {
+    
+    entries.forEach(entry => {
+     
+
+      if (entry.isIntersecting) {
+        const img = entry.target;
+        const src = img.getAttribute('data-lazy');
+        console.log(src)
+
+        img.setAttribute('src', src);
+        
+
+        observer.disconnect();
+      }
+    });
+  });
+
+  io.observe(target)
+};
+
+targets.forEach(lazyLoad);
