@@ -1,5 +1,7 @@
 *{
-  overflow-x: hidden;
+  border:4px red !important;
+  
+ 
 }
 body{
     background-color: rgb(18,21,27);
@@ -142,6 +144,7 @@ body{
   background-repeat: no-repeat;
   background-position: center;
   background-size: 100%;
+  margin-left: 0px;
 }
 .abt{
   color: rgb(110,250,241);;
