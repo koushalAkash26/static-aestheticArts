@@ -65,6 +65,7 @@ mainHome.addEventListener('click',()=>{
 
 })
 const targets = document.querySelectorAll('[data-lazy]');
+console.log(targets)
 
 
 const lazyLoad = target => {
@@ -76,7 +77,7 @@ const lazyLoad = target => {
       if (entry.isIntersecting) {
         const img = entry.target;
         const src = img.getAttribute('data-lazy');
-        console.log(src)
+        
 
         img.setAttribute('src', src);
         
@@ -90,3 +91,36 @@ const lazyLoad = target => {
 };
 
 targets.forEach(lazyLoad);
+window.addEventListener( 'load', () => {
+  startQueries()
+  })
+  
+  const startQueries = () => {
+    let newQuery = window.matchMedia( ' ( max-width: 767px ) ' )
+    const queryListenChanges = query => {
+      let a=document.getElementsByClassName("col-md-4")
+    if( query.matches ){
+      
+      console.log("hello");
+      for (var i=0;i<a.length;i+=1){
+        a[i].setAttribute("data-aos","zoom-in-up");
+    }
+  }
+  else
+    {
+   console.log("hi")
+   for (var i=0;i<a.length;i+=1){
+     if(i===0||i===3||i===6){
+      a[i].setAttribute("data-aos","zoom-in-right");
+     }
+    else if(i===1||i===4||i===7){
+      a[i].setAttribute("data-aos","zoom-out");
+
+    }
+    else if(i===2||i===5||i===8){
+      a[i].setAttribute("data-aos","zoom-in-left");
+
+    }
+}}}
+    newQuery.addListener( queryListenChanges )
+    queryListenChanges( newQuery )}
