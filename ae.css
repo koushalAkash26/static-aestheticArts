@@ -1,5 +1,9 @@
+*{
+  overflow-x: hidden;
+}
 body{
     background-color: rgb(18,21,27);
+    
 }
 .title{
     max-height:300px;
@@ -207,7 +211,7 @@ body{
   .footer-basic ul a {
     color:inherit;
     text-decoration:none;
-    opacity:0.8;
+    opacity:1;
   }
   
   .footer-basic ul a:hover {
@@ -343,6 +347,14 @@ img{
     opacity: 0.1;
     width: 100%;
     height: 100%;
+}
+#home{
+  opacity:0.6;
+}
+#home:hover{
+  opacity:1;
+  transform:translateY(-0.25em);
+  transition: all 0.5s ease;
 }
   
   @media only screen and (min-width: 1200px){
