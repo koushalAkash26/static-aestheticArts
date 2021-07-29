@@ -7,6 +7,7 @@ var profileBox = document.querySelectorAll('box3')
 let abt=document.getElementById('abt')
 let mainHome=document.getElementById('abt1')
 var header = document.getElementsByClassName('head')[0]
+var bodyContainer=document.querySelector('body')
 /*let pb=document.getElementById("b3");*/
 console.log(profileBox)
 function display(seq){
@@ -43,6 +44,9 @@ abt.addEventListener('click',()=>{
     document.getElementById("b3").classList.remove("box3")
     document.getElementById("b3").classList.add("box3d")
     header.style.display="none"
+    bodyContainer.classList.add("body1")
+    header.classList.add("body1")
+
      
    
     
@@ -54,6 +58,10 @@ document.getElementById("home").addEventListener('click',()=>{
   bigBox.style.display="block"
     head.style.display="block"
     header.style.display="block"
+    bodyContainer.classList.remove("body1")
+    header.classList.remove("body1")
+    
+
 
 })
 mainHome.addEventListener('click',()=>{
@@ -62,6 +70,7 @@ mainHome.addEventListener('click',()=>{
   bigBox.style.display="block"
     head.style.display="block"
     header.style.display="block"
+    
 
 })
 const targets = document.querySelectorAll('[data-lazy]');

@@ -386,8 +386,14 @@ img{
   }
   .box3{
     display:none;
+    overflow-x: hidden;
   }
   .box3d{
     display:block;
     background-color: white;
+    overflow-x: hidden;
   }
+  .body1{
+    background-color: white;
+  }
+  
