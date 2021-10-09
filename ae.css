@@ -367,10 +367,10 @@ img{
         width:50%;
         margin:0 auto;
         max-width: 50%;
-        max-height: 500px;
+        max-height: 700px;
         border: 5px solid rgb(236,220,187);
         font-family: 'Comfortaa', cursive;
-        font-size: 15px;
+        font-size: 20px;
         color: rgb(121,130,129);
         padding:10px;
         border-radius:4%
@@ -378,6 +378,15 @@ img{
         
         
     } 
+    .block1{
+      height:600px
+    }
+    .p2{
+      font-size: 40px;
+    }
+    .center1{
+      font-size:60px;
+    }
     .row1{
         display: flex;
       }
