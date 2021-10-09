@@ -133,3 +133,63 @@ window.addEventListener( 'load', () => {
 }}}
     newQuery.addListener( queryListenChanges )
     queryListenChanges( newQuery )}
+    /*var input = document.querySelector('.input_text');
+var main = document.querySelector('#name');
+var temp = document.querySelector('.temp');
+var desc = document.querySelector('.desc');
+var clouds = document.querySelector('.clouds');
+var button= document.querySelector('.submit');
+dirData={1:"N",2:"NNE",3:"NE",4:"ENE",5:"E",6:"ESE",7:"SE",8:"SSE",9:"S",10:"SSW",11:"SW",12:"WSW",13:"W",14:"WNW",15:"NW",16:"NNW",17:"N"}
+
+
+button.addEventListener('click', function(name){
+fetch('https://api.openweathermap.org/data/2.5/weather?q='+input.value+'&appid=50a7aa80fa492fa92e874d23ad061374')
+.then(response => response.json())
+.then(data => {
+  var tempValue = data['main']['temp'];
+  var nameValue = data['name'];
+  var descValue = data['weather'][0]['description'];
+  var sec = data["sys"]["sunset"]
+  var degData=data["wind"]["deg"]
+  console.log(degData)
+  let deg=degData%360
+  let compDeg=Math.round(deg/22.5)+1
+  console.log(dirData[compDeg])
+  console.log(deg)
+
+
+
+  main.innerHTML = nameValue;
+  desc.innerHTML = "Desc - "+descValue;
+  temp.innerHTML = "Temp - "+tempValue;
+  input.value ="";
+  console.log(data)
+
+})
+
+//.catch(err => alert("Wrong city name!"));
+})
+let maincontainer=document.getElementById("head")
+window.addEventListener( 'load', () => {
+    startQueries()
+    })
+    
+    const startQueries = () => {
+      let newQuery = window.matchMedia( ' ( max-width: 1000px ) ' )
+      const queryListenChanges = query => {
+        
+      if( query.matches ){
+          console.log("hellllll")
+          maincontainer.classList.add("heading1")
+          maincontainer.classList.remove("heading")
+        
+    
+    }
+    else
+      {
+     console.log("dumpppppp")
+     maincontainer.classList.add("heading")
+     maincontainer.classList.remove("heading1")
+  }}
+newQuery.addListener( queryListenChanges )
+queryListenChanges( newQuery )}*/

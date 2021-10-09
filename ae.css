@@ -277,7 +277,7 @@ body{
 }
 img{
     height: 100% !important;
-    width: 100%;
+    width: 100% !important;
 }
 .p2{
     font-family: 'Italianno', cursive;
@@ -295,7 +295,7 @@ img{
     
     margin:0 auto;
     max-width: 100%;
-    min-height: 400px;
+    min-height: 300px;
     border: 5px solid rgb(236,220,187);
     font-family: 'Comfortaa', cursive;
     font-size: 15px;
@@ -356,6 +356,10 @@ img{
   opacity:1;
   transform:translateY(-0.25em);
   transition: all 0.5s ease;
+}
+#image1-1{
+  height:100% !important;
+  width:80% !important;
 }
   
   @media only screen and (min-width: 1200px){
