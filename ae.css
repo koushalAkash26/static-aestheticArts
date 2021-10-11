@@ -268,7 +268,7 @@ body{
     
 }
 .block1{
-     height:300px;
+     height:500px;
      text-align: center;
      display:flex;
      justify-content: center;
@@ -379,7 +379,7 @@ img{
         
     } 
     .block1{
-      height:600px
+      height:700px
     }
     .p2{
       font-size: 40px;
